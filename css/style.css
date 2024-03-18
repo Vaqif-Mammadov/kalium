@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Heebo", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin: 0;
+   padding: 0;
+   gap: 800px;
+}
+
+#left img {
+    width: 250px;
+}
+
+#right img {
+    width: 250px;
+}
+/* hr{
+    
+} */
+
+.bg {
+    background-image: url(../media/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    animation-name: picture;
+    animation-duration: 10s;
+    animation-delay: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes picture {
+    0% {
+        background-image: url(../media/back1.jpg);
+    }
+
+    50% {
+        background-image: url(../media/backg2.jpg);
+    }
+
+    100% {
+        background-image: url(../media/backg3.jpg);
+    }
+}
+
+#first:before {
+    content: 'Design of interiors,the art of organizing interior space.';
+    animation-name: text;
+    animation-duration: 10s;
+    animation-delay: none;
+    animation-iteration-count: infinite;
+}
+
+#first {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@keyframes var {
+    10% {
+        color: #fff;
+        content: "Design of interiors,the art of organizing interior space.";
+    }
+
+    50% {
+        color: #000;
+        text-align: left;
+        content: "architecture at it's finest.arch.studio based in london,uk.";
+
+    }
+
+    90% {
+        color: #000;
+        text-align: left;
+        content: "Leeuw house";
+    }
+}
+
+@keyframes text {
+    0% {
+        color: rgb(246, 246, 247);
+        content: "Design of interiors,the art of organizing interior space.";
+    }
+
+    50% {
+        text-align: left;
+        content: "architecture at it's finest.arch.studio based in london,uk.";
+    }
+
+    100% {
+        text-align: left;
+        content: "Leeuw house";
+    }
+}
+
+.back {
+    margin-right: 10%;
+}
+
+.back h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: "Heebo";
+    font-weight: 100;
+    counter-reset: white;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.xosh {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 55vh;
+    margin: 0 10%;
+}
+
+.xosh p {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.xosh h1 {
+    padding-top: 20px;
+}
+
+.sekil {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 76%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ust-sol {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#big {
+    width: 69%;
+    height: 350px;
+}
+
+/* #lihts1,
+#lihts2,
+#lihts3 {
+    width: 29%;
+    height: 350px;
+} */
+
+#lights {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    animation-name: light;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-delay: none;
+}
+
+@keyframes light {
+    0% {
+        background-image: url(../media/sekilustsag1.jpg);
+    }
+
+    50% {
+        background-image: url(../media/sekilustsag2.jpg);
+    }
+
+    100% {
+        background-image: url(../media/sekilustsag3.jpg);
+    }
+}
+
+.alt-sol {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#alt-sol1 {
+    width: 33%;
+    height: 280px;
+}
+
+#alt-sol2 {
+    width: 33%;
+    height: 280px;
+}
+
+#alt-sol3 {
+    width: 33%;
+    height: 280px;
+}
+
+.layihe {
+    width: 100%;
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.black-end {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(27, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.basliq {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 8%;
+    border-bottom: 1px solid rgb(57, 58, 57);
+}
+
+.basliq-sol {
+    width: 40%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.basliq-sag {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    width: 40%;
+}
+
+.clipar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.clipar h1 {
+    width: 40%;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.clipar p {
+    width: 35%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.icons {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.ikon {
+    width: 20%;
+    height: 50%;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+}
+
+#ikon_text1 {
+    position: absolute;
+    top: 9%;
+    left: 2%;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text1:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text2 {
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    width: 125px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text2:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text3 {
+    position: absolute;
+    top: 5%;
+    left: 41%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text3:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text4 {
+    position: absolute;
+    top: 8%;
+    left: 62%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text4:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text5 {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text5:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text6 {
+    position: absolute;
+    top: 59%;
+    left: 1%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text6:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text7 {
+    position: absolute;
+    top: 59%;
+    left: 21%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text7:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text8 {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text8:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text9 {
+    position: absolute;
+    top: 59%;
+    left: 61%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#ikon_text9:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#ikon_text10 {
+    position: absolute;
+    top: 59%;
+    left: 82%;
+    width: 125px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+#ikon_text10:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.news {
+    width: 100%;
+    background-color: rgb(229, 231, 241);
+}
+
+.head {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 10%;
+}
+
+.head h1 {
+    width: 40%;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.head p {
+    width: 40%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.bot-end {
+    margin: 5% 7%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.end-photo {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    height: 50%;
+}
+
+.end-photo img {
+    width: 150px;
+    height: 100px;
+    transition: 0.4s;
+}
+
+.end-photo p {
+    width: 65%;
+}
+
+#en-son {
+    margin-left: 120px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.footbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footbar a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social ul {
+    display: flex;
+    gap: 30px;
+}
+
+h6 {
+    margin-left: 100px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.line:hover {
+    cursor: pointer;
+    color: rgb(96, 62, 209);
+    width: 100%;
+}
+
+.line:hover:after {
+    width: 100%;
+}
+
+.line:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(96, 62, 209);
+    transition: 300ms;
+}
+
+button {
+    bottom: 20px;
+    left: 30px;
+    position: fixed;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(20, 18, 18);
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(56, 228, 108);
+}
